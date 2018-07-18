@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=0" charset="utf-8" />
+    <title>ESP8266 Configuratore</title>
+
+    <style>
+        form {
+            width: 300px;
+            margin-left: 20px; /* centra l'intero form nella pagina */
+            padding: 10px 0;
+            border: 0px double #99a;
+        }
+
+        .data {
+            margin-bottom: 15px;
+            margin-left: 5px;
+        }
+
+        label, #submit {
+            margin-left: 5px;
+            margin-top:15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Configurazione rilevatore temperature</h1>
+    <form method="get" action="setap">
+
+        <fieldset>
+            <legend>Wi-Fi</legend>
+            <label class="data">SSID: </label>
+            <select class="data" name="ssid"></select><br />
+            <label>Password: </label><br />
+            <input class="data" name="pass" maxlength=64 type="password"><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Cliente</legend>
+            <label>Nome</label><br />
+            <input class="data" name="idcli" maxlength="10" type="text" /><br />
+            <label>e-mail</label><br />
+            <input class="data" name="email" type="email" /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Generale</legend>
+            <label>Errori consecutivi</label><br />
+            <input class="data" name="errors" type="number" /><br />
+        </fieldset>
+
+        <fieldset disabled="disabled">
+            <legend>Sensore 0</legend>
+            <label>Nome</label><br />
+            <input class="data" name="sensorName0" maxlength="10" type="text" value="enabled" /><br />
+            <label>Intervallo letture, in minuti</label><br />
+            <input class="data" name="time0" type="number" /><br />
+            <label>Temperatura minima</label><br />
+            <input class="data" name="mintemp0" type="number" /><br />
+            <label>Temperatura massima</label><br />
+            <input class="data" name="maxtemp0" type="number" /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Sensore 1</legend>
+            <label>Nome</label><br />
+            <input class="data" name="sensorName1" maxlength="10" type="text" value="enabled" /><br />
+            <label>Intervallo letture, in minuti</label><br />
+            <input class="data" name="time1" type="number" /><br />
+            <label>Temperatura minima</label><br />
+            <input class="data" name="mintemp1" type="number" /><br />
+            <label>Temperatura massima</label><br />
+            <input class="data" name="maxtemp1" type="number" /><br />
+        </fieldset>
+
+
+        <input id="submit" type="submit" value="Salva" />
+    </form>
+</body>
+</html>

@@ -16,10 +16,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MonitorTemperature.ino" />
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="Config.html" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.MonitorTemperature.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="jsonConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alertMail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jsonConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alertMail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

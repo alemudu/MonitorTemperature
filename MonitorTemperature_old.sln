@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MonitorTemperature", "MonitorTemperature.vcxproj", "{904EC98B-95B6-41BA-967C-CBFB81AEC544}"
 EndProject
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EB4B4D2B-C991-4290-91FA-EF0561E9BBBE}
+		SolutionGuid = {62252946-567D-4092-9679-ED9EA54DF167}
 	EndGlobalSection
 EndGlobal
